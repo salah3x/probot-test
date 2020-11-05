@@ -1,6 +1,6 @@
 on:
     pull_request_target:
-     branches: [ main ]
+     branches: [ master ]
      types: [opened, labeled, unlabeled, synchronize]
 
 jobs:
@@ -9,7 +9,7 @@ jobs:
     name: Check PR has valid labels
     steps:
     - name: Check PR has valid labels
-      uses: amine-arb-2019/check-pr-label@v1.7
+      uses: amine-arb-2019/check-pr-label@v1.8
       with:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
         valid-labels: 'OCA signed'
