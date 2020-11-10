@@ -1,2 +1,2 @@
-# Probot test
-Testing probot framework for creating GitHub apps
+# Github Apps
+Testing GitHub apps
